@@ -1,0 +1,26 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 06/05/2026 17:12
+
+.SUBCKT funkcija_matching
+M$1 \$1 \$1 \$1 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.102p AD=0.057p PS=1.28u
++ PD=0.68u
+M$2 \$1 \$8 \$3 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.057p AD=0.057p PS=0.68u
++ PD=0.68u
+M$3 \$3 \$7 \$1 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.057p AD=0.057p PS=0.68u
++ PD=0.68u
+M$4 \$1 \$6 \$3 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.057p AD=0.057p PS=0.68u
++ PD=0.68u
+M$5 \$3 \$2 \$4 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.057p AD=0.057p PS=0.68u
++ PD=0.68u
+M$6 \$4 \$1 \$4 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.057p AD=0.102p PS=0.68u
++ PD=1.28u
+M$7 \$9 \$9 \$9 \$9 sg13_lv_pmos L=0.13u W=0.6u AS=0.159p AD=0.159p PS=1.96u
++ PD=1.96u
+M$8 \$9 \$8 \$10 \$9 sg13_lv_pmos L=0.13u W=0.9u AS=0.171p AD=0.171p PS=2.04u
++ PD=2.04u
+M$9 \$10 \$7 \$11 \$9 sg13_lv_pmos L=0.13u W=0.9u AS=0.171p AD=0.171p PS=2.04u
++ PD=2.04u
+M$10 \$11 \$6 \$4 \$9 sg13_lv_pmos L=0.13u W=0.9u AS=0.171p AD=0.171p PS=2.04u
++ PD=2.04u
+M$17 \$4 \$2 \$9 \$9 sg13_lv_pmos L=0.13u W=0.3u AS=0.057p AD=0.057p PS=0.68u
++ PD=0.68u
+.ENDS funkcija_matching
