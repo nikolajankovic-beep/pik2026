@@ -1,25 +1,3 @@
-# Prisilno postavljanje putanje čim se učita šema
-proc xschem_podesi_putanju {} {
-    set fajl [xschem get current_name]
-    if {$fajl != "" && $fajl != "untitled"} {
-        set ::netlist_dir [file dirname $fajl]
-        # Ova linija nasilno šalje komandu direktno u Xschem jezgro
-        xschem set netlist_dir $::netlist_dir
-    }
-}
-
-# Vežemo funkciju za događaj otvaranja fajla
-set xschem_open_file_hook xschem_podesi_putanju
-
-# I još jedna "sigurnosna" koja se aktivira na svaki klik miša u prozoru
-bind . <Button-1> {
-    catch {
-        set f [xschem get current_name]
-        if {$f != ""} { set ::netlist_dir [file dirname $f] }
-    }
-}
-# ---------------------------
-# -------------------------------------------------------------------
 #### xschemrc system configuration file
 
 #### values may be overridden by user's ~/.xschem/xschemrc configuration file
@@ -125,7 +103,7 @@ bind . <Button-1> {
 #### if this is set to '2' netlists and simulations will go into a simulation/[schname]/ folder
 #### inside the directory containing the top level schematic.
 #### Default: not set (0).
-# set local_netlist_dir 1
+set local_netlist_dir 1
 
 ###########################################################################
 #### NETLIST AND HIERARCHICAL PRINT EXCLUDE PATTERNS
