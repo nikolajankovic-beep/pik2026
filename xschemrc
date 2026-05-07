@@ -571,3 +571,16 @@ set local_netlist_dir 1
 #### Default: not enabled (0)
 # set fix_mouse_coord 
 
+# --- FORCE-NETLIST ZA UNIANDES/IHP ---
+set postinit_commands {
+    .menubar.netlist configure -command {
+        set f [xschem get current_name]
+        if {$f != "" && $f != "untitled"} {
+            set ::netlist_dir [file dirname $f]
+            xschem netlist
+            puts "--- AUTOMATIK: Netlista prisilno spremljena u: $::netlist_dir ---"
+        } else {
+            xschem netlist
+        }
+    }
+}
