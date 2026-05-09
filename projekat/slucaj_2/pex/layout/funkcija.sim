@@ -1,0 +1,9 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x b a_94_n521# GND GND s=2280,136 d=2280,136 l=26 w=60 x=170 y=-520 sg13_lv_nmos
+x d out vdd vdd s=4080,256 d=4080,256 l=26 w=60 x=572 y=65 sg13_lv_pmos
+x a GND a_94_n521# GND s=4080,256 d=2280,136 l=26 w=60 x=68 y=-520 sg13_lv_nmos
+x c GND a_94_n521# GND s=2280,136 d=2280,136 l=26 w=60 x=272 y=-520 sg13_lv_nmos
+x c a_196_0# out vdd s=6840,256 d=12240,496 l=26 w=180 x=272 y=0 sg13_lv_pmos
+x d a_94_n521# out GND s=2280,136 d=4080,256 l=26 w=60 x=374 y=-520 sg13_lv_nmos
+x a vdd a_94_0# vdd s=12240,496 d=6840,256 l=26 w=180 x=68 y=0 sg13_lv_pmos
+x b a_94_0# a_196_0# vdd s=6840,256 d=6840,256 l=26 w=180 x=170 y=0 sg13_lv_pmos

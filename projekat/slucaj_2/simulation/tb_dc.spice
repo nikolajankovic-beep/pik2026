@@ -1,0 +1,66 @@
+** sch_path: /home/Nikola.Jankovic/projekat/slucaj_2/testbench/tb_dc.sch
+**.subckt tb_dc
+Va a GND 0
+Vb b GND 0
+Vc c GND 0
+Vd d GND 1.5
+Vdd net1 GND 1.5
+x1 net1 out d a c b GND funkcija
+**** begin user architecture code
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerHBT.lib hbt_typ
+.lib cornerRES.lib res_typ
+
+
+
+
+
+
+
+
+
+.dc Va 0 1.5 0.001
+
+.control
+  save all
+  run
+
+  * Crtanje VTC krive
+  plot v(out) vs v(a)
+
+  * Crtanje izvoda VTC krive za pronalazenje margina suma (trazi se gde je y = -1)
+  *plot deriv(v(out)) vs v(a)
+
+   wrdata /home/Nikola.Jankovic/projekat/slucaj_2/python/vtc_kriva.txt v(out)
+.endc
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/Nikola.Jankovic/projekat/slucaj_2/schematic/funkcija.sym # of pins=7
+** sym_path: /home/Nikola.Jankovic/projekat/slucaj_2/schematic/funkcija.sym
+** sch_path: /home/Nikola.Jankovic/projekat/slucaj_2/schematic/funkcija.sch
+.subckt funkcija vdd out d a c b GND
+*.ipin a
+*.ipin b
+*.ipin c
+*.ipin d
+*.iopin vdd
+*.iopin GND
+*.opin out
+XM1 net1 a GND GND sg13_lv_nmos w=0.3u l=0.13u ng=1 m=1
+XM2 net1 b GND GND sg13_lv_nmos w=0.3u l=0.13u ng=1 m=1
+XM3 net1 c GND GND sg13_lv_nmos w=0.3u l=0.13u ng=1 m=1
+XM4 out d net1 GND sg13_lv_nmos w=0.3u l=0.13u ng=1 m=1
+XM5 net2 a vdd vdd sg13_lv_pmos w=0.9u l=0.13u ng=1 m=1
+XM6 net3 b net2 vdd sg13_lv_pmos w=0.9u l=0.13u ng=1 m=1
+XM7 out c net3 vdd sg13_lv_pmos w=0.9u l=0.13u ng=1 m=1
+XM8 out d vdd vdd sg13_lv_pmos w=0.3u l=0.13u ng=1 m=1
+.ends
+
+.GLOBAL GND
+.end

@@ -1,0 +1,114 @@
+* NGSPICE file created from funkcija_matching.ext - technology: ihp-sg13g2
+
+.subckt funkcija_matching vdd out d a c b GND
+X0 a_196_292# a.t0 vdd.t3 vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X1 a_298_292# b.t0 a_196_292# vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X2 out.t0 GND.t9 out.t0 GND.t10 sg13_lv_nmos ad=57f pd=0.68u as=0 ps=0 w=0.3u l=0.13u
+X3 out.t1 c.t0 a_298_292# vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X4 a_196_n238# a.t0 GND.t1 GND.t0 sg13_lv_nmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X5 a_298_292# c.t0 out.t1 vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X6 a_196_292# b.t1 a_298_292# vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X7 vdd.t1 a.t1 a_196_292# vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X8 GND.t8 GND.t6 GND.t1 GND.t7 sg13_lv_nmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=0.13u
+X9 a_196_292# a.t1 vdd.t1 vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X10 vdd.t8 vdd.t6 vdd.t3 vdd.t0 sg13_lv_pmos ad=0.102p pd=1.28u as=0 ps=0 w=0.3u l=0.13u
+X11 a_298_292# b.t2 a_196_292# vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X12 GND.t4 b.t0 a_196_n238# GND.t5 sg13_lv_nmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X13 out.t2 c.t1 a_298_292# vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X14 vdd.t5 d.t0 out.t2 vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X15 vdd.t5 vdd.t4 vdd.t5 vdd.t0 sg13_lv_pmos ad=57f pd=0.68u as=0 ps=0 w=0.3u l=0.13u
+X16 a_196_n238# c.t0 GND.t4 GND.t3 sg13_lv_nmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X17 out.t0 d.t1 a_196_n238# GND.t2 sg13_lv_nmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+R0 a.n0 a.t1 34.2143
+R1 a.n0 a.t0 15.0005
+R2 a a.n0 0.734912
+R3 vdd.n5 vdd.t8 17.5814
+R4 vdd.n3 vdd.t3 17.5814
+R5 vdd.n1 vdd.t1 17.5814
+R6 vdd.n0 vdd.t4 15.0752
+R7 vdd.n4 vdd.t6 15.0005
+R8 vdd.n0 vdd.t5 8.78738
+R9 vdd.n2 vdd.t0 5.48336
+R10 vdd.n1 vdd.n0 1.19666
+R11 vdd.n3 vdd.n2 0.84409
+R12 vdd.n2 vdd.n1 0.805501
+R13 vdd vdd.n5 0.23975
+R14 vdd.n5 vdd.n4 0.1435
+R15 vdd.n4 vdd.n3 0.138
+R16 b.n1 b.n0 18.6222
+R17 b.n0 b.t2 15.8777
+R18 b.n0 b.t1 15.0005
+R19 b.n1 b.t0 15.0005
+R20 b b.n1 1.06491
+R21 GND.n0 GND.t10 1080.55
+R22 GND.t10 GND.t2 551.351
+R23 GND.t2 GND.t3 551.351
+R24 GND.t3 GND.t5 551.351
+R25 GND.t5 GND.t0 551.351
+R26 GND.t0 GND.t7 551.351
+R27 GND.n1 GND.t4 17.2274
+R28 GND.n2 GND.t1 17.2274
+R29 GND.n4 GND.t8 17.2274
+R30 GND.n0 GND.t9 15.0005
+R31 GND.n3 GND.t6 15.0005
+R32 GND.n1 GND.n0 0.684646
+R33 GND.n2 GND.n1 0.547817
+R34 GND GND.n4 0.233915
+R35 GND.n3 GND.n2 0.137329
+R36 GND.n4 GND.n3 0.137329
+R37 out.n0 out.t1 17.3443
+R38 out.n1 out.t2 17.2039
+R39 out.n0 out.t0 9.57954
+R40 out.n1 out.n0 1.3366
+R41 out out.n1 0.609524
+R42 c.n0 c.t1 34.1985
+R43 c.n0 c.t0 15.0005
+R44 c c.n0 1.39491
+R45 d d.n0 19.6638
+R46 d.n0 d.t0 16.7452
+R47 d.n0 d.t1 15.0005
+C0 d out 0.14972f
+C1 d a_298_292# 0.00601f
+C2 d a 0.02976f
+C3 c vdd 0.12091f
+C4 out vdd 0.3021f
+C5 c b 0.74786f
+C6 vdd a_298_292# 0.10563f
+C7 a vdd 0.24404f
+C8 out b 0.30882f
+C9 c a_196_292# 0.01804f
+C10 b a_298_292# 0.02507f
+C11 d a_196_n238# 0.031f
+C12 a b 0.80455f
+C13 out a_196_292# 0.14133f
+C14 a_298_292# a_196_292# 0.61484f
+C15 a a_196_292# 0.20249f
+C16 a_196_n238# b 0.0143f
+C17 d vdd 0.05636f
+C18 d b 0.17228f
+C19 out c 0.10304f
+C20 c a_298_292# 0.03875f
+C21 a c 0.08028f
+C22 d a_196_292# 0
+C23 out a_298_292# 0.32342f
+C24 b vdd 0.11756f
+C25 a out 0.1414f
+C26 a a_298_292# 0.15979f
+C27 vdd a_196_292# 0.32715f
+C28 a_196_n238# c 0.07293f
+C29 b a_196_292# 0.02311f
+C30 a_196_n238# out 0.07839f
+C31 a_196_n238# a_298_292# 0.00138f
+C32 a a_196_n238# 0.0047f
+C33 d c 0.57584f
+C34 out GND 0.41212f
+C35 d GND 0.93104f
+C36 c GND 0.56147f
+C37 b GND 0.48575f
+C38 a GND 0.46018f
+C39 vdd GND 0.39028f
+C40 a_196_n238# GND 0.27782f
+C41 a_298_292# GND 0.20813f
+C42 a_196_292# GND 0.1352f
+.ends
+

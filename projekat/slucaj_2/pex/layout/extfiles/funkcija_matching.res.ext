@@ -1,0 +1,122 @@
+scale 1000 1 0.5
+rnode "d.t0" 0 0 1101 322 0
+rnode "d.t1" 0 0 489 -208 0
+rnode "d.n0" 0 0 688 -81 0
+rnode "d" 0 0 -57 -94 0
+resist "d.n0" "d.t1" 15
+resist "d.n0" "d.t0" 16.7447
+resist "d" "d.n0" 19.6633
+rnode "c.t1" 0 0 999 322 0
+rnode "c.t0" 0 0 387 322 0
+rnode "c.n0" 0 0 387 26 0
+rnode "c" 0 0 -57 9 0
+resist "c" "c.n0" 1.39441
+resist "c.n0" "c.t0" 15
+resist "c.n0" "c.t1" 34.198
+rnode "out.t0" 0 0 502 -208 0
+rnode "out.t1" 0 0 400 322 0
+rnode "out.n0" 0 0 536 214 0
+rnode "out.t2" 0 0 1012 322 0
+rnode "out.n1" 0 0 1077 234 0
+rnode "out" 0 0 1304 216 0
+resist "out" "out.n1" 0.609024
+resist "out.n1" "out.n0" 1.3361
+resist "out.n0" "out.t0" 9.57904
+resist "out.n1" "out.t2" 17.2034
+resist "out.n0" "out.t1" 17.3438
+rnode "GND.t8" 0 0 68 -208 0
+rnode "GND.t1" 0 0 94 -208 0
+rnode "GND.t4" 0 0 298 -208 0
+rnode "GND.t7" 0 0 81 -208 0
+rnode "GND.t0" 0 0 183 -208 0
+rnode "GND.t5" 0 0 285 -208 0
+rnode "GND.t3" 0 0 387 -208 0
+rnode "GND.t2" 0 0 489 -208 0
+rnode "GND.t10" 0 0 591 -208 0
+rnode "GND.t9" 0 0 591 -208 0
+rnode "GND.n0" 0 0 591 -295 0
+rnode "GND.n1" 0 0 336 -274 0
+rnode "GND.n2" 0 0 132 -274 0
+rnode "GND.t6" 0 0 81 -208 0
+rnode "GND.n3" 0 0 81 -295 0
+rnode "GND.n4" 0 0 30 -274 0
+rnode "GND" 0 0 -57 -312 0
+resist "GND.n4" "GND.n3" 0.136829
+resist "GND.n3" "GND.n2" 0.136829
+resist "GND" "GND.n4" 0.233415
+resist "GND.n2" "GND.n1" 0.547317
+resist "GND.n1" "GND.n0" 0.684146
+resist "GND.n3" "GND.t6" 15
+resist "GND.n0" "GND.t9" 15
+resist "GND.n4" "GND.t8" 17.2269
+resist "GND.n2" "GND.t1" 17.2269
+resist "GND.n1" "GND.t4" 17.2269
+resist "GND.t0" "GND.t7" 551.351
+resist "GND.t5" "GND.t0" 551.351
+resist "GND.t3" "GND.t5" 551.351
+resist "GND.t2" "GND.t3" 551.351
+resist "GND.t10" "GND.t2" 551.351
+resist "GND.n0" "GND.t10" 1080.55
+rnode "b.t1" 0 0 591 322 0
+rnode "b.t2" 0 0 897 322 0
+rnode "b.n0" 0 0 622 121 0
+rnode "b.t0" 0 0 285 322 0
+rnode "b.n1" 0 0 285 123 0
+rnode "b" 0 0 -57 106 0
+resist "b" "b.n1" 1.06441
+resist "b.n1" "b.t0" 15
+resist "b.n0" "b.t1" 15
+resist "b.n0" "b.t2" 15.8772
+resist "b.n1" "b.n0" 18.6217
+rnode "vdd.t8" 0 0 68 322 0
+rnode "vdd.t3" 0 0 94 322 0
+rnode "vdd.t0" 0 0 626 511 0
+rnode "vdd.t1" 0 0 706 322 0
+rnode "vdd.t4" 0 0 1203 322 0
+rnode "vdd.t5" 0 0 1114 322 0
+rnode "vdd.n0" 0 0 1114 322 0
+rnode "vdd.n1" 0 0 744 491 0
+rnode "vdd.n2" 0 0 626 511 0
+rnode "vdd.n3" 0 0 132 491 0
+rnode "vdd.t6" 0 0 81 322 0
+rnode "vdd.n4" 0 0 82 511 0
+rnode "vdd.n5" 0 0 30 491 0
+rnode "vdd" 0 0 -57 493 0
+resist "vdd.n4" "vdd.n3" 0.1375
+resist "vdd.n5" "vdd.n4" 0.143
+resist "vdd" "vdd.n5" 0.23925
+resist "vdd.n2" "vdd.n1" 0.805001
+resist "vdd.n3" "vdd.n2" 0.84359
+resist "vdd.n1" "vdd.n0" 1.19616
+resist "vdd.n2" "vdd.t0" 5.48286
+resist "vdd.n0" "vdd.t5" 8.78688
+resist "vdd.n4" "vdd.t6" 15
+resist "vdd.n0" "vdd.t4" 15.0747
+resist "vdd.n1" "vdd.t1" 17.5809
+resist "vdd.n3" "vdd.t3" 17.5809
+resist "vdd.n5" "vdd.t8" 17.5809
+rnode "a.t1" 0 0 795 322 0
+rnode "a.t0" 0 0 183 322 0
+rnode "a.n0" 0 0 183 220 0
+rnode "a" 0 0 -57 204 0
+resist "a" "a.n0" 0.734412
+resist "a.n0" "a.t0" 15
+resist "a.n0" "a.t1" 34.2138
+device msubckt sg13_lv_nmos 476 -238 477 -237  "GND.t2" "d.t1" 52 0 "a_196_n238#" 60 2280,136 "out.t0" 60 2280,136
+device msubckt sg13_lv_nmos 374 -238 375 -237  "GND.t3" "c.t0" 52 0 "GND.t4" 60 2280,136 "a_196_n238#" 60 2280,136
+device msubckt sg13_lv_pmos 1190 292 1191 293  "vdd.t0" "vdd.t4" 52 0 "vdd.t5" 60 0 "vdd.t5" 60 2280,136
+device msubckt sg13_lv_pmos 1088 292 1089 293  "vdd.t0" "d.t0" 52 0 "out.t2" 60 2280,136 "vdd.t5" 60 2280,136
+device msubckt sg13_lv_pmos 986 292 987 293  "vdd.t0" "c.t1" 52 0 "a_298_292#" 60 2280,136 "out.t2" 60 2280,136
+device msubckt sg13_lv_nmos 272 -238 273 -237  "GND.t5" "b.t0" 52 0 "a_196_n238#" 60 2280,136 "GND.t4" 60 2280,136
+device msubckt sg13_lv_pmos 884 292 885 293  "vdd.t0" "b.t2" 52 0 "a_196_292#" 60 2280,136 "a_298_292#" 60 2280,136
+device msubckt sg13_lv_pmos 68 292 69 293  "vdd.t0" "vdd.t6" 52 0 "vdd.t3" 60 0 "vdd.t8" 60 4080,256
+device msubckt sg13_lv_pmos 782 292 783 293  "vdd.t0" "a.t1" 52 0 "vdd.t1" 60 2280,136 "a_196_292#" 60 2280,136
+device msubckt sg13_lv_nmos 68 -238 69 -237  "GND.t7" "GND.t6" 52 0 "GND.t1" 60 0 "GND.t8" 60 4080,256
+device msubckt sg13_lv_pmos 680 292 681 293  "vdd.t0" "a.t1" 52 0 "a_196_292#" 60 2280,136 "vdd.t1" 60 2280,136
+device msubckt sg13_lv_pmos 578 292 579 293  "vdd.t0" "b.t1" 52 0 "a_298_292#" 60 2280,136 "a_196_292#" 60 2280,136
+device msubckt sg13_lv_pmos 476 292 477 293  "vdd.t0" "c.t0" 52 0 "out.t1" 60 2280,136 "a_298_292#" 60 2280,136
+device msubckt sg13_lv_nmos 170 -238 171 -237  "GND.t0" "a.t0" 52 0 "GND.t1" 60 2280,136 "a_196_n238#" 60 2280,136
+device msubckt sg13_lv_pmos 374 292 375 293  "vdd.t0" "c.t0" 52 0 "a_298_292#" 60 2280,136 "out.t1" 60 2280,136
+device msubckt sg13_lv_nmos 578 -238 579 -237  "GND.t10" "GND.t9" 52 0 "out.t0" 60 0 "out.t0" 60 2280,136
+device msubckt sg13_lv_pmos 272 292 273 293  "vdd.t0" "b.t0" 52 0 "a_196_292#" 60 2280,136 "a_298_292#" 60 2280,136
+device msubckt sg13_lv_pmos 170 292 171 293  "vdd.t0" "a.t0" 52 0 "vdd.t3" 60 2280,136 "a_196_292#" 60 2280,136

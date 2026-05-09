@@ -1,0 +1,79 @@
+* NGSPICE file created from funkcija.ext - technology: ihp-sg13g2
+
+.subckt funkcija vdd out d a c b GND 
+X0 GND.t1 b.t0 a_94_n521# GND.t5 sg13_lv_nmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X1 vdd.t1 d.t0 out.t0 vdd.t0 sg13_lv_pmos ad=0.102p pd=1.28u as=0.102p ps=1.28u w=0.3u l=0.13u
+X2 a_94_n521# a.t0 GND.t4 GND.t3 sg13_lv_nmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=0.13u
+X3 a_94_n521# c.t0 GND.t1 GND.t0 sg13_lv_nmos ad=57f pd=0.68u as=57f ps=0.68u w=0.3u l=0.13u
+X4 out.t2 c.t0 a_196_0# vdd.t0 sg13_lv_pmos ad=0.306p pd=2.48u as=0.171p ps=1.28u w=0.9u l=0.13u
+X5 out.t1 d.t1 a_94_n521# GND.t2 sg13_lv_nmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=0.13u
+X6 a_94_0# a.t0 vdd.t2 vdd.t0 sg13_lv_pmos ad=0.171p pd=1.28u as=0.306p ps=2.48u w=0.9u l=0.13u
+X7 a_196_0# b.t0 a_94_0# vdd.t0 sg13_lv_pmos ad=0.171p pd=1.28u as=0.171p ps=1.28u w=0.9u l=0.13u
+R0 b b.t0 15.7808
+R1 GND.n1 GND.t3 347.068
+R2 GND.t0 GND.n0 299.526
+R3 GND.t5 GND.n0 185.421
+R4 GND.n1 GND.t5 137.876
+R5 GND.n2 GND.t2 87.0241
+R6 GND.n2 GND.t0 39.5035
+R7 GND.n4 GND.t1 17.2885
+R8 GND.n5 GND.t4 17.2564
+R9 GND.n3 GND.n1 17.0005
+R10 GND.n3 GND.n0 17.0005
+R11 GND.n4 GND.n3 3.4342
+R12 GND.n3 GND.n2 0.460563
+R13 GND.n5 GND.n4 0.313054
+R14 GND GND.n5 0.135885
+R15 d.n0 d.t0 15.9413
+R16 d.n0 d.t1 15.0005
+R17 d d.n0 1.60925
+R18 out out.t1 18.2713
+R19 out.n0 out.t0 17.4229
+R20 out.n0 out.t2 8.49645
+R21 out out.n0 0.934529
+R22 vdd.n0 vdd.t1 18.1739
+R23 vdd.n1 vdd.t2 8.92555
+R24 vdd.n0 vdd.t0 6.69132
+R25 vdd.n1 vdd.n0 0.354262
+R26 vdd vdd.n1 0.137577
+R27 a a.t0 15.4302
+R28 c c.t0 16.1314
+C0 b a_94_0# 0.01165f
+C1 b a_196_0# 0.00445f
+C2 b c 0.25286f
+C3 d a 0.01079f
+C4 a_94_n521# d 0.26653f
+C5 vdd d 0.07565f
+C6 a a_94_0# 0.00513f
+C7 a c 0.00942f
+C8 a_94_n521# c 0.01167f
+C9 out d 0.29542f
+C10 a b 0.20155f
+C11 vdd a_94_0# 0.10374f
+C12 vdd a_196_0# 0.01375f
+C13 vdd c 0.05649f
+C14 a_94_n521# b 0.01149f
+C15 vdd b 0.05144f
+C16 out a_196_0# 0.11621f
+C17 out c 0.01667f
+C18 out b 0.00156f
+C19 a_94_n521# a 0.00434f
+C20 vdd a 0.11653f
+C21 out a 0.00883f
+C22 out a_94_n521# 0.03589f
+C23 d c 0.36475f
+C24 vdd out 0.19088f
+C25 d b 0.0127f
+C26 a_196_0# a_94_0# 0.08999f
+C27 a_196_0# c 0.00827f
+C28 d GND 0.4185f
+C29 out GND 0.29903f
+C30 c GND 0.3104f
+C31 b GND 0.27083f
+C32 a GND 0.32376f
+C33 vdd GND 0.22361f
+C34 a_94_n521# GND 0.25024f
+C35 a_196_0# GND 0.0055f
+C36 a_94_0# GND 0.00494f
+.ends
+

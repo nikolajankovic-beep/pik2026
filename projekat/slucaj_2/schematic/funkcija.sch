@@ -190,5 +190,5 @@ C {lab_pin.sym} 750 -840 0 0 {name=p6 sig_type=std_logic lab=b}
 C {lab_pin.sym} 750 -920 0 0 {name=p7 sig_type=std_logic lab=a}
 C {lab_pin.sym} 1030 -860 0 0 {name=p8 sig_type=std_logic lab=d}
 C {iopin.sym} 960 -1010 3 0 {name=p9 lab=vdd}
-C {iopin.sym} 950 -390 1 0 {name=p10 lab=ground}
+C {iopin.sym} 950 -390 1 0 {name=p10 lab=GND}
 C {opin.sym} 1240 -720 0 0 {name=p11 lab=out}

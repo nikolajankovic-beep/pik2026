@@ -1,0 +1,43 @@
+** sch_path: /home/Nikola.Jankovic/projekat/slucaj_2/pex/testbench/tb_tran_matching.sch
+**.subckt tb_tran_matching
+Va a GND PULSE(0 1.5 0 0.1p 0.1p 150p 300p)
+Vb b GND 0
+Vc c GND 0
+Vd d GND 1.5
+Vdd vdd GND 1.5
+x1 vdd out d a c b GND funkcija_matching
+**** begin user architecture code
+
+
+
+.lib cornerMOSlv.lib mos_tt
+.lib cornerMOShv.lib mos_tt
+.lib cornerHBT.lib hbt_typ
+.lib cornerRES.lib res_typ
+
+
+
+
+
+
+
+
+.include /home/Nikola.Jankovic/projekat/slucaj_2/pex/layout/funkcija_matching.spice
+.tran 0.1p 800p
+
+.control
+  save all
+  run
+
+  meas tran tr_out TRIG v(out) VAL=0.15 RISE=2 TARG v(out) VAL=1.35 RISE=2
+  meas tran tf_out TRIG v(out) VAL=1.35 FALL=2 TARG v(out) VAL=0.15 FALL=2
+
+  plot v(a)+4.5 v(b)+3 v(c)+1.5 v(out)
+  wrdata /home/Nikola.Jankovic/projekat/slucaj_2/pex/python/odziv_match.txt v(a) v(out)
+  print tr_out tf_out
+.endc
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

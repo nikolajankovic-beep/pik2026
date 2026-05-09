@@ -1,4 +1,4 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 06/05/2026 17:15
+* Extracted by KLayout with SG13G2 LVS runset on : 08/05/2026 14:27
 
 .SUBCKT funkcija
 M$1 \$1 \$7 \$3 \$1 sg13_lv_nmos L=0.13u W=0.3u AS=0.102p AD=0.057p PS=1.28u

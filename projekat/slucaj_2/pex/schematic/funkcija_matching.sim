@@ -1,0 +1,19 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x a vdd a_196_292# vdd s=2280,136 d=2280,136 l=26 w=60 x=170 y=292 sg13_lv_pmos
+x b a_196_292# a_298_292# vdd s=2280,136 d=2280,136 l=26 w=60 x=272 y=292 sg13_lv_pmos
+x GND out out GND d=2280,136 l=26 w=60 x=578 y=-237 sg13_lv_nmos
+x c a_298_292# out vdd s=2280,136 d=2280,136 l=26 w=60 x=374 y=292 sg13_lv_pmos
+x a GND a_196_n238# GND s=2280,136 d=2280,136 l=26 w=60 x=170 y=-237 sg13_lv_nmos
+x c out a_298_292# vdd s=2280,136 d=2280,136 l=26 w=60 x=476 y=292 sg13_lv_pmos
+x b a_298_292# a_196_292# vdd s=2280,136 d=2280,136 l=26 w=60 x=578 y=292 sg13_lv_pmos
+x a a_196_292# vdd vdd s=2280,136 d=2280,136 l=26 w=60 x=680 y=292 sg13_lv_pmos
+x GND GND GND GND d=4080,256 l=26 w=60 x=68 y=-237 sg13_lv_nmos
+x a vdd a_196_292# vdd s=2280,136 d=2280,136 l=26 w=60 x=782 y=292 sg13_lv_pmos
+x vdd vdd vdd vdd d=4080,256 l=26 w=60 x=68 y=292 sg13_lv_pmos
+x b a_196_292# a_298_292# vdd s=2280,136 d=2280,136 l=26 w=60 x=884 y=292 sg13_lv_pmos
+x b a_196_n238# GND GND s=2280,136 d=2280,136 l=26 w=60 x=272 y=-237 sg13_lv_nmos
+x c a_298_292# out vdd s=2280,136 d=2280,136 l=26 w=60 x=986 y=292 sg13_lv_pmos
+x d out vdd vdd s=2280,136 d=2280,136 l=26 w=60 x=1088 y=292 sg13_lv_pmos
+x vdd vdd vdd vdd d=2280,136 l=26 w=60 x=1190 y=292 sg13_lv_pmos
+x c GND a_196_n238# GND s=2280,136 d=2280,136 l=26 w=60 x=374 y=-237 sg13_lv_nmos
+x d a_196_n238# out GND s=2280,136 d=2280,136 l=26 w=60 x=476 y=-237 sg13_lv_nmos

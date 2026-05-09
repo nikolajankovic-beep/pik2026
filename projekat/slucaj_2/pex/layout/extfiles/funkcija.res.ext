@@ -1,0 +1,72 @@
+scale 1000 1 0.5
+rnode "c.t0" 0 0 285 90 0
+rnode "c" 0 0 -58 -278 0
+resist "c" "c.t0" 16.1309
+rnode "a.t0" 0 0 81 90 0
+rnode "a" 0 0 -58 -81 0
+resist "a" "a.t0" 15.4297
+rnode "vdd.t2" 0 0 30 30 0
+rnode "vdd.t1" 0 0 598 95 0
+rnode "vdd.t0" 0 0 60 331 0
+rnode "vdd.n0" 0 0 60 331 0
+rnode "vdd.n1" 0 0 23 298 0
+rnode "vdd" 0 0 -58 315 0
+resist "vdd" "vdd.n1" 0.137077
+resist "vdd.n1" "vdd.n0" 0.353762
+resist "vdd.n0" "vdd.t0" 6.69082
+resist "vdd.n1" "vdd.t2" 8.92505
+resist "vdd.n0" "vdd.t1" 18.1734
+rnode "out.t2" 0 0 336 150 0
+rnode "out.t0" 0 0 572 95 0
+rnode "out.n0" 0 0 366 95 0
+rnode "out.t1" 0 0 400 -491 0
+rnode "out" 0 0 683 -81 0
+resist "out" "out.n0" 0.934029
+resist "out.n0" "out.t2" 8.49595
+resist "out.n0" "out.t0" 17.4224
+resist "out" "out.t1" 18.2708
+rnode "d.t0" 0 0 585 95 0
+rnode "d.t1" 0 0 387 -491 0
+rnode "d.n0" 0 0 424 -355 0
+rnode "d" 0 0 -58 -357 0
+resist "d" "d.n0" 1.60875
+resist "d.n0" "d.t1" 15
+resist "d.n0" "d.t0" 15.9408
+rnode "GND.t4" 0 0 68 -491 0
+rnode "GND.n0" 0 0 222 -628 0
+rnode "GND.t5" 0 0 183 -491 0
+rnode "GND.t3" 0 0 81 -491 0
+rnode "GND.n1" 0 0 154 -628 0
+rnode "GND.t0" 0 0 285 -491 0
+rnode "GND.t2" 0 0 387 -491 0
+rnode "GND.n2" 0 0 387 -491 0
+rnode "GND.n3" 0 0 426 -628 0
+rnode "GND.t1" 0 0 196 -491 0
+rnode "GND.n4" 0 0 234 -598 0
+rnode "GND.n5" 0 0 31 -598 0
+rnode "GND" 0 0 -49 -649 0
+resist "GND" "GND.n5" 0.135385
+resist "GND.n5" "GND.n4" 0.312554
+resist "GND.n3" "GND.n2" 0.460063
+resist "GND.n4" "GND.n3" 3.4337
+resist "GND.n3" "GND.n0" 17
+resist "GND.n3" "GND.n1" 17
+resist "GND.n5" "GND.t4" 17.2559
+resist "GND.n4" "GND.t1" 17.288
+resist "GND.n2" "GND.t0" 39.503
+resist "GND.n2" "GND.t2" 87.0236
+resist "GND.n1" "GND.t5" 137.876
+resist "GND.t5" "GND.n0" 185.42
+resist "GND.t0" "GND.n0" 299.525
+resist "GND.n1" "GND.t3" 347.068
+rnode "b.t0" 0 0 183 90 0
+rnode "b" 0 0 -58 -180 0
+resist "b" "b.t0" 15.7803
+device msubckt sg13_lv_pmos 170 0 171 1  "vdd.t0" "b.t0" 52 0 "a_94_0#" 180 6840,256 "a_196_0#" 180 6840,256
+device msubckt sg13_lv_pmos 68 0 69 1  "vdd.t0" "a.t0" 52 0 "vdd.t2" 180 12240,496 "a_94_0#" 180 6840,256
+device msubckt sg13_lv_nmos 374 -521 375 -520  "GND.t2" "d.t1" 52 0 "a_94_n521#" 60 2280,136 "out.t1" 60 4080,256
+device msubckt sg13_lv_pmos 272 0 273 1  "vdd.t0" "c.t0" 52 0 "a_196_0#" 180 6840,256 "out.t2" 180 12240,496
+device msubckt sg13_lv_nmos 272 -521 273 -520  "GND.t0" "c.t0" 52 0 "GND.t1" 60 2280,136 "a_94_n521#" 60 2280,136
+device msubckt sg13_lv_nmos 68 -521 69 -520  "GND.t3" "a.t0" 52 0 "GND.t4" 60 4080,256 "a_94_n521#" 60 2280,136
+device msubckt sg13_lv_pmos 572 65 573 66  "vdd.t0" "d.t0" 52 0 "out.t0" 60 4080,256 "vdd.t1" 60 4080,256
+device msubckt sg13_lv_nmos 170 -521 171 -520  "GND.t5" "b.t0" 52 0 "a_94_n521#" 60 2280,136 "GND.t1" 60 2280,136

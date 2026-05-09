@@ -1,0 +1,77 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+port "out" 15 1304 216 1340 252 m1
+port "d" 13 -57 -94 -25 -62 m1
+port "c" 11 -57 9 -25 41 m1
+port "b" 9 -57 106 -25 138 m1
+port "a" 7 -57 204 -25 236 m1
+port "vdd" 5 -57 493 -21 529 m1
+port "GND" 3 -57 -312 -21 -276 m1
+node "a_196_n238#" 1 277.822 196 -238 ndif 0 0 0 0 14876 930 0 0 0 0 0 0 0 0 0 0 0 0
+node "out" 5 412.122 1304 216 m1 0 0 0 0 74585 3608 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_298_292#" 3 208.133 298 292 pdif 0 0 0 0 10800 720 17840 946 32796 1526 0 0 0 0 0 0 0 0
+node "a_196_292#" 3 135.199 196 292 pdif 0 0 0 0 10800 720 49404 2320 0 0 0 0 0 0 0 0 0 0
+node "d" 4 931.044 -57 -94 m1 0 0 0 0 36556 2098 28288 1356 0 0 0 0 0 0 0 0 0 0
+node "c" 3 561.465 -57 9 m1 0 0 0 0 21446 1318 31148 1486 0 0 0 0 0 0 0 0 0 0
+node "b" 3 485.754 -57 106 m1 0 0 0 0 38138 1972 19562 930 0 0 0 0 0 0 0 0 0 0
+node "a" 3 460.177 -57 204 m1 0 0 0 0 14510 910 31782 1522 0 0 0 0 0 0 0 0 0 0
+node "vdd" 7 390.283 -57 493 m1 0 0 0 0 85040 4730 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 -57 -312 m1 0 0 0 0 104112 3250 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_298_292#" "c" 38.7536
+cap "vdd" "c" 120.915
+cap "a_196_292#" "c" 18.0434
+cap "a_298_292#" "a" 159.787
+cap "a" "vdd" 244.043
+cap "a_298_292#" "out" 323.423
+cap "out" "vdd" 302.101
+cap "a_196_292#" "a" 202.489
+cap "a_196_292#" "out" 141.326
+cap "a_196_n238#" "d" 30.999
+cap "a_298_292#" "b" 25.0716
+cap "b" "vdd" 117.564
+cap "b" "a_196_292#" 23.1105
+cap "a" "c" 80.2831
+cap "out" "c" 103.035
+cap "a_298_292#" "d" 6.0054
+cap "d" "vdd" 56.3592
+cap "a_298_292#" "a_196_n238#" 1.38169
+cap "a_196_292#" "d" 0.308209
+cap "a" "out" 141.396
+cap "b" "c" 747.861
+cap "b" "a" 804.548
+cap "b" "out" 308.819
+cap "d" "c" 575.843
+cap "a_298_292#" "vdd" 105.629
+cap "a_196_n238#" "c" 72.9258
+cap "a_298_292#" "a_196_292#" 614.836
+cap "a" "d" 29.7559
+cap "a_196_292#" "vdd" 327.152
+cap "out" "d" 149.723
+cap "a_196_n238#" "a" 4.70206
+cap "a_196_n238#" "out" 78.3911
+cap "b" "d" 172.284
+cap "b" "a_196_n238#" 14.3042
+device msubckt sg13_lv_nmos 578 -238 579 -237 l=26 w=60 "GND" "GND" 52 0 "out" 0 0 "out" 120 2280,136
+device msubckt sg13_lv_nmos 476 -238 477 -237 l=26 w=60 "GND" "d" 52 0 "a_196_n238#" 60 2280,136 "out" 60 2280,136
+device msubckt sg13_lv_nmos 374 -238 375 -237 l=26 w=60 "GND" "c" 52 0 "GND" 60 2280,136 "a_196_n238#" 60 2280,136
+device msubckt sg13_lv_nmos 272 -238 273 -237 l=26 w=60 "GND" "b" 52 0 "a_196_n238#" 60 2280,136 "GND" 60 2280,136
+device msubckt sg13_lv_nmos 170 -238 171 -237 l=26 w=60 "GND" "a" 52 0 "GND" 60 2280,136 "a_196_n238#" 60 2280,136
+device msubckt sg13_lv_nmos 68 -238 69 -237 l=26 w=60 "GND" "GND" 52 0 "GND" 0 0 "GND" 120 4080,256
+device msubckt sg13_lv_pmos 1190 292 1191 293 l=26 w=60 "vdd" "vdd" 52 0 "vdd" 0 0 "vdd" 120 2280,136
+device msubckt sg13_lv_pmos 1088 292 1089 293 l=26 w=60 "vdd" "d" 52 0 "out" 60 2280,136 "vdd" 60 2280,136
+device msubckt sg13_lv_pmos 986 292 987 293 l=26 w=60 "vdd" "c" 52 0 "a_298_292#" 60 2280,136 "out" 60 2280,136
+device msubckt sg13_lv_pmos 884 292 885 293 l=26 w=60 "vdd" "b" 52 0 "a_196_292#" 60 2280,136 "a_298_292#" 60 2280,136
+device msubckt sg13_lv_pmos 782 292 783 293 l=26 w=60 "vdd" "a" 52 0 "vdd" 60 2280,136 "a_196_292#" 60 2280,136
+device msubckt sg13_lv_pmos 680 292 681 293 l=26 w=60 "vdd" "a" 52 0 "a_196_292#" 60 2280,136 "vdd" 60 2280,136
+device msubckt sg13_lv_pmos 578 292 579 293 l=26 w=60 "vdd" "b" 52 0 "a_298_292#" 60 2280,136 "a_196_292#" 60 2280,136
+device msubckt sg13_lv_pmos 476 292 477 293 l=26 w=60 "vdd" "c" 52 0 "out" 60 2280,136 "a_298_292#" 60 2280,136
+device msubckt sg13_lv_pmos 374 292 375 293 l=26 w=60 "vdd" "c" 52 0 "a_298_292#" 60 2280,136 "out" 60 2280,136
+device msubckt sg13_lv_pmos 272 292 273 293 l=26 w=60 "vdd" "b" 52 0 "a_196_292#" 60 2280,136 "a_298_292#" 60 2280,136
+device msubckt sg13_lv_pmos 170 292 171 293 l=26 w=60 "vdd" "a" 52 0 "vdd" 60 2280,136 "a_196_292#" 60 2280,136
+device msubckt sg13_lv_pmos 68 292 69 293 l=26 w=60 "vdd" "vdd" 52 0 "vdd" 0 0 "vdd" 120 4080,256
